@@ -124,7 +124,6 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(answers) {
-  console.log(answers);
   return new Promise((resolve, reject) => {
     fs.writeFile(`./README.md`, generateMarkdown(answers), (err) => {
       // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
@@ -148,10 +147,10 @@ function init() {
   inquirer
     .prompt(questions)
     .then((answers) => {
-      console.log(answers);
-    })
-    .then((answers) => {
       return writeToFile(answers);
+    })
+    .then((writeToFileResponse) => {
+      console.log(writeToFileResponse.message);
     })
     .catch((err) => {
       console.log(err);

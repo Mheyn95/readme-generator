@@ -27,7 +27,7 @@ const renderLicenseSection = (answers) => {
 };
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(answers) {
+const generateMarkdown = (answers) => {
   return `
   # ${answers.title}
 
@@ -61,14 +61,13 @@ function generateMarkdown(answers) {
   * GitHub - [${answers.githubLink}](${answers.githubLink})
   * Email - [${answers.name}](mailto:${answers.email})
 
-  ${renderLicenseSection}
+  ${renderLicenseSection(answers)}
 
-  
   ### Credits
   
   ${answers.name}
   
 `;
-}
+};
 
 module.exports = generateMarkdown;
