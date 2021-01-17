@@ -18,7 +18,7 @@ const renderLicenseLink = (answers) => {
     case "GPL":
       answers.licenseLink = "https://www.gnu.org/licenses/gpl-3.0";
       break;
-    case "The Apache License":
+    case "Apache":
       answers.licenseLink = "https://opensource.org/licenses/Apache-2.0";
       break;
     case "MsPL":
@@ -50,6 +50,14 @@ const renderLicenseSection = (answers) => {
   [${renderLicenseBadge(answers)}](${renderLicenseLink(answers)})`;
 };
 
+const renderLicenseContent = (answers) => {
+  if (!answers.license) {
+    return "";
+  }
+  return `
+  * [Test](#test)`;
+};
+
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (answers) => {
   return `
@@ -67,7 +75,7 @@ const generateMarkdown = (answers) => {
   * [Usage](#usage)
   * [Test](#test)
   * [Questions](#questions)
-  * [License](#license)
+  ${renderLicenseContent(answers)}
   * [Credits](#credits)
 
   ## Installation

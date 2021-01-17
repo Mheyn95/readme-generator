@@ -1,12 +1,11 @@
 
-  # y
+  # n
 
   
-  [![License: MsPL](https://img.shields.io/badge/License-MsPL-yellow.svg)](https://opensource.org/licenses/MS-PL)
 
   ## Description
   
-  y
+  n
 
   ## Table of Contents
 
@@ -14,27 +13,27 @@
   * [Usage](#usage)
   * [Test](#test)
   * [Questions](#questions)
-  * [License](#license)
+  
   * [Credits](#credits)
 
   ## Installation
 
-  y
+  n
 
   ## Usage
 
-  y
+  n
 
   ## Test
 
-  y
+  n
   
   ## Questions
 
-  * GitHub - [y](y)
-  * Email - [y](mailto:y)
+  * GitHub - [n](n)
+  * Email - [n](mailto:n)
 
   ### Credits
   
-  y
+  n
   

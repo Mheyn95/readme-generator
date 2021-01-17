@@ -118,7 +118,7 @@ const questions = [
     type: "list",
     name: "license",
     message: "Please enter a license",
-    choices: ["GPL", "The Apache License", "MsPL", "BSD", "CDDL", "EPL", "MIT"],
+    choices: ["GPL", "Apache", "MsPL", "BSD", "CDDL", "EPL", "MIT"],
     when: ({ confirmLicense }) => confirmLicense,
   },
 ];
