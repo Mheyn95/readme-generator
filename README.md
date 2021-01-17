@@ -34,6 +34,6 @@ In order to test this application you can run it and just type "test" for all th
 - GitHub - [https://github.com/Mheyn95](https://github.com/Mheyn95)
 - Email - [mheyn95@gmail.com](mailto:mheyn95@gmail.com)
 
-### Credits
+## Contributing
 
 Mitchell Heyn
