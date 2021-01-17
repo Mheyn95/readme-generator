@@ -21,9 +21,18 @@ This application can be used to generate a professional README.md file through t
 
 To install this file navigate to [https://github.com/Mheyn95/readme-generator](https://github.com/Mheyn95/readme-generator) in a web browser and clone the repository.
 
+Here is an image of GitHub and where you can go to clone the repo.
+![Image of online repo at on GitHub](./assets/images/githubRepo.png)
+
+Here is an image of the command you run in terminal to clone the repo onto your own local machine
+![Image of terminal showing the command to clone the repo from GitHub](./assets/images/terminal.png)
+
 ## Usage
 
-To use this application go to the directory where you cloned the repository. From here change directories to "develop". Once here you can run "node index.js", the application will then run and prompt you for information.
+To use this application go to the directory where you cloned the repository. From here change directories to "Develop". Once here you can run "node index.js", the application will then run and prompt you for information.
+
+Here you can see the different commands to run to navigate into the parent directory, and then in to the "Develop" directory. Once in there you can run the application by typing "node index.js"!
+![Image of terminal showing the commands to start the application](./assets/images/startProgram.png)
 
 ## Test
 
