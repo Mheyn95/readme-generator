@@ -34,6 +34,9 @@ To use this application go to the directory where you cloned the repository. Fro
 Here you can see the different commands to run to navigate into the parent directory, and then in to the "Develop" directory. Once in there you can run the application by typing "node index.js"!
 ![Image of terminal showing the commands to start the application](./assets/images/startProgram.png)
 
+To watch a video of this application being used follow this link:
+[README Generator Video](https://drive.google.com/file/d/1IYjIAWcRGPlVC8e0kvhAiKExYZiMz7od/preview)
+
 ## Test
 
 In order to test this application you can run it and just type "test" for all the user prompts (except the one requiring Y/N, just type one or the other for this one). To test the app make sure you answer all questions and then check to make sure a README.md file was created in the same directory as "index.js". Navigate to the README and make sure all the sections are filled in with "test". You can then delete this file and run the application again and submit actual answers to generate a real README.
