@@ -37,7 +37,8 @@ const renderLicenseLink = (answers) => {
       answers.licenseLink = "https://opensource.org/licenses/MIT";
       break;
   }
-  return answers.licenseLink;
+  return `
+  [${renderLicenseBadge(answers)}](${answers.licenseLink})`;
 };
 
 // TODO: Create a function that returns the license section of README
@@ -46,8 +47,10 @@ const renderLicenseSection = (answers) => {
   if (!answers.license) {
     return "";
   }
-  return `
-  [${renderLicenseBadge(answers)}](${renderLicenseLink(answers)})`;
+  return ` ## License
+   
+  Please click the license at the top of the file to see a description and the terms and conditions of the license this application is using.
+  `;
 };
 
 const renderLicenseContent = (answers) => {
@@ -55,7 +58,7 @@ const renderLicenseContent = (answers) => {
     return "";
   }
   return `
-  * [Test](#test)`;
+  * [License](#License)`;
 };
 
 // TODO: Create a function to generate markdown for README
@@ -63,7 +66,7 @@ const generateMarkdown = (answers) => {
   return `
   # ${answers.title}
 
-  ${renderLicenseSection(answers)}
+  ${renderLicenseLink(answers)}
 
   ## Description
   
@@ -76,7 +79,7 @@ const generateMarkdown = (answers) => {
   * [Test](#test)
   * [Questions](#questions)
   ${renderLicenseContent(answers)}
-  * [Credits](#credits)
+  * [Contributing](#Contributing)
 
   ## Installation
 
@@ -93,11 +96,17 @@ const generateMarkdown = (answers) => {
   ## Questions
 
   * GitHub - [${answers.githubLink}](${answers.githubLink})
-  * Email - [${answers.email}](mailto:${answers.email})
+  * Email Me - [${answers.email}](mailto:${answers.email})  
+  
 
-  ### Credits
+
+  ${renderLicenseSection(answers)}
+
+  ## Contributing
   
   ${answers.name}
+
+
   
 `;
 };
